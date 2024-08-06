@@ -19,7 +19,7 @@ sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
 ```
 verify the version installed with:
-```bash
+``` bash
 $ nodejs -v
 v12.11.1
 $ npm -v
