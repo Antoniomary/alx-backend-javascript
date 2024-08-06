@@ -19,7 +19,7 @@ sudo bash nodesource_setup.sh
 sudo apt install nodejs -y
 ```
 verify the version installed with:
-``` bash
+```bash
 $ nodejs -v
 v12.11.1
 $ npm -v
@@ -27,6 +27,7 @@ $ npm -v
 ```
 
 Install Jest, Babel, and ESLint in your project directory using the package.json file
+**package.json**
 ```package.json
 {
   "scripts": {
@@ -53,7 +54,8 @@ Then run
 npm install
 ```
 
-copy to project directory too
+copy the following to the project directory too
+**babel.config.js**
 ```babel.config.js
 module.exports = {
   presets: [
@@ -68,6 +70,7 @@ module.exports = {
   ],
 };
 ```
+**.eslintrc.js**
 ```.eslintrc.js
 module.exports = {
   env: {
@@ -106,6 +109,7 @@ module.exports = {
 };
 ```
 This utils.js is used where tasks requires uploadPhoto and createUser
+**utils.js**
 ```utils.js
 export function uploadPhoto() {
   return Promise.resolve({
