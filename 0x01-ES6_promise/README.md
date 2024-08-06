@@ -26,7 +26,7 @@ $ npm -v
 6.11.3
 ```
 
-Install Jest, Babel, and ESLint in your project directory using the package.json file
+Install Jest, Babel, and ESLint in your project directory using the package.json file  
 **package.json**
 ```package.json
 {
@@ -54,7 +54,7 @@ Then run
 npm install
 ```
 
-copy the following to the project directory too
+copy the following to the project directory too  
 **babel.config.js**
 ```babel.config.js
 module.exports = {
@@ -108,7 +108,7 @@ module.exports = {
   ]
 };
 ```
-This utils.js is used where tasks requires uploadPhoto and createUser
+This utils.js is used where tasks requires uploadPhoto and createUser  
 **utils.js**
 ```utils.js
 export function uploadPhoto() {
