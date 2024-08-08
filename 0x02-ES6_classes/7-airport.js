@@ -9,10 +9,6 @@ export default class Airport {
     this._code = code;
   }
 
-  repr() {
-    return `${this.constructor} [${this._code}] ${this.object}`;
-  }
-
   toString() {
     return `[object ${this._code}]`;
   }
