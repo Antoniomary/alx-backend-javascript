@@ -18,7 +18,7 @@ describe('sendPaymentRequestToApi', () => {
     mySpy.restore();
   });
 
-  it('verify calculateNumber usage', () => {
+  it('verify calculateNumber usage with stub and spy', () => {
     sendPaymentRequestToApi(100, 20);
 
     expect(myStub.calledWith('SUM', 100, 20)).to.be.true;
