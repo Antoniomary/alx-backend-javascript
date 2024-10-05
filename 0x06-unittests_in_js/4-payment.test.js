@@ -15,6 +15,5 @@ describe('sendPaymentRequestToApi', () => {
     expect(mySpy.calledWith('The total is: 10')).to.be.true;
 
     mySpy.restore();
-    myStub.restore();
   });
 });
