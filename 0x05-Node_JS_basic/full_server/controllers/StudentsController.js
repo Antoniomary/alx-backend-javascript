@@ -22,7 +22,7 @@ class StudentsController {
       return response.status(500).send('Major parameter must be CS or SWE');
     }
 
-    readDatabase(process.argv[2])
+    return readDatabase(process.argv[2])
       .then((students) => {
         const names = students[major];
         const result = `List: ${names.join(', ')}`;
