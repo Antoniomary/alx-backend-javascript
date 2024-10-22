@@ -7,8 +7,6 @@ function readDatabase(path) {
       else {
         const lines = data.trim().split('\n').slice(1);
 
-        let count = 0;
-
         const students = {};
         lines.forEach((line) => {
           const words = line.split(',');
@@ -17,8 +15,6 @@ function readDatabase(path) {
 
           if (!students[field]) students[field] = [];
           students[field].push(firstName);
-
-          count += 1;
         });
 
         resolve(students);
