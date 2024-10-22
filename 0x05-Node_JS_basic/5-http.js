@@ -50,7 +50,7 @@ const app = http.createServer((req, res) => {
         res.end(result.slice(0, -1));
       }).catch((err) => {
         res.stastusCode = 404;
-        res.end(err.message);
+        res.end(result + err.message);
       });
   }
 });
